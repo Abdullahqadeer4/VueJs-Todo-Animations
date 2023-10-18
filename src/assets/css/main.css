@@ -1,0 +1,206 @@
+/* 
+general 
+-------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 15px/1.4 "Poppins", sans-serif;
+  background: linear-gradient(to right, #4ec5c1, #f3f3f3); 
+  color: #333;
+}
+.content {
+  background-color:rgba(82, 192, 183, 0.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9); 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px); 
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -10px; 
+  left: 0;
+  width: 100%;
+  height: 10px; 
+  background: transparent;
+
+  animation: float 5s linear infinite, rotate 10s linear infinite;
+}
+
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Style the input field and button */
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 1px solid #4ec5c1;
+}
+button {
+  background: #4ec5c1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+task 
+----
+*/
+.task {
+  background: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the title */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  position: relative;
+  margin: 0 0 30px;
+}
+
+.form button {
+  background: none;
+  border: none;
+  color: #4ec5c1;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+.clearBtns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+}
+
+.clearBtns button {
+  width: 48%;
+  background: #4ec5c1;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 1%;
+}
+
+.clearBtns button:hover {
+  background: #333;
+}
+
+.pendingTasks {
+  padding: 0 6px;
+}
+
+/* 
+task items
+----------
+*/
+.todo-list {
+  animation: float 5s ease-in-out infinite;
+}
+.marked-tasks{
+  animation:float 5s ease-in-out infinite;
+}
+.taskItems {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskItems .todo-list,
+.taskItems .marked-tasks {
+  width: 48%;
+}
+
+.taskItems li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.taskItems button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.taskItems button:hover {
+  color: #4ec5c1;
+}
+.taskItems li:hover {
+  background: rgba(78, 197, 193, 0.9);
+}
+.taskItems .toggle i {
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+
+.taskItems .toggle.toggle-completed {
+  text-decoration: line-through;
+}
+h3 {
+  white-space: nowrap;
+}
