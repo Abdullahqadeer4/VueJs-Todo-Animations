@@ -1,10 +1,5 @@
 <template>
   <div class="container">
-    <div class="floating-objects">
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-</div>
     <div class="task">
       <div class="title">
         <h1>To Do List</h1>
@@ -25,13 +20,7 @@
               </button>
             </li>
           </ul>
-          <div class="floating-objects">
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-</div>
         </div>
-
         <div class="marked-tasks">
           <h3>Marked Tasks</h3>
           <ul>
@@ -44,36 +33,16 @@
               </button>
             </li>
           </ul>
-          <div class="floating-objects">
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-</div>
         </div>
       </div>
-      <div class="floating-objects">
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-</div>
       <div class="clearBtns">
         <button @click="clearCompleted">Clear completed</button>
         <button @click="clear">Clear all</button>
       </div>
       <div class="pendingTasks">
-        <span>Pending Tasks: {{ incomplete }}</span>
-        <div class="floating-objects">
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-</div>
+        <span>Pending Tasks: {{ incomplete }}</span> 
       </div>
     </div>
-    <div class="floating-objects">
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-  <div class="floating-object"></div>
-</div>
   </div>
 </template>
 
