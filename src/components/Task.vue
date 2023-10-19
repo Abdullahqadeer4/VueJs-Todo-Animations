@@ -22,7 +22,7 @@
           </ul>
         </div>
         <div class="marked-tasks">
-          <h3>Marked Tasks</h3>
+          <h3>Completed</h3>
           <ul>
             <li v-for="task in markedTasks" :key="task.id">
               <input type="checkbox" v-model="task.completed" @change="showBackwardArrow(task)" />
