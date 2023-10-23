@@ -24,6 +24,13 @@
         <div class="marked-tasks">
           <h3>Completed</h3>
           <ul>
+            <!-- <li v-for="task in tasks" :key="task.id">
+              <input type="checkbox" v-model="task.completed" @change="showBackwardArrow(task)"/>
+              <span class="title-title"> {{title.title}} </span>
+              <button v-if="task.showArrow" @click="unmarkTask(task)">
+                <i class="fas fa-arrow-right"></i>
+                </button>
+            </li> -->
             <li v-for="task in markedTasks" :key="task.id">
               <input type="checkbox" v-model="task.completed" @change="showBackwardArrow(task)" />
               <span class="task-title">{{ task.title }}</span>

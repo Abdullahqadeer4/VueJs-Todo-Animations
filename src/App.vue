@@ -1,16 +1,19 @@
 <template>
   <div id="app">
+    <Login></Login>
     <task v-bind:tasks="tasks"></task>
   </div>
 </template>
 
 <script>
 import Task from "./components/Task";
+import Login from "./components/Login"; 
 
 export default {
   name: "App",
   components: {
     Task,
+    Login,
   },
   data() {
     return {
